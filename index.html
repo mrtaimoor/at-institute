@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+    <script src="/script/script.js"></script>
+    <title>AT INSTITUTE</title>
+    <!--  -->
+    <style>
+      .modal {
+        z-index: 10;
+        display: block;
+        padding-top: 100px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .modal-content {
+        margin: auto;
+        background-color: #fff;
+        position: relative;
+        padding: 0;
+        outline: 0;
+        max-width: 600px;
+      }
+      .modal-inner {
+        padding: 20px 30px;
+      }
+      .modal-close {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #ccc;
+        padding: 6px 10px;
+      }
+      .animate-opacity {
+
+        animation: opac 0.8s;
+      }
+      @keyframes opac {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+    <!--  -->
+  </head>
+  <body>
+    
+    <!--  -->
+    <div id="modal-1" class="modal animate-opacity">
+      <div class="modal-content">
+        <div class="modal-inner">
+          <span
+            onclick="document.getElementById('modal-1').style.display='none'"
+            class="modal-close"
+            >&times;</span
+          >
+          <!-- <h4>Modal Headline</h4> -->
+          <p>
+            <!-- <img
+              style="width: 100%"
+              class="responsive"
+                src="https://i.postimg.cc/qBh7ggj7/image2.jpg"
+            /> -->
+            <img
+              style="width: 100%"
+              class="responsive"
+              src="https://i.postimg.cc/qBh7ggj7/image2.jpg"
+              border="0"
+              alt="image2"
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <header>
+      <div class="container">
+        <h1>
+          AT INSTITUTE
+          <img
+            src="/taimuria tech.edu.pk(Education)/images/remover.png"
+            alt=""
+          />
+        </h1>
+      </div>
+    </header>
+
+    <div class="bg-dark">
+      <div class="container">
+        <div class="mobile-nav">
+          <button class="mobile-btn" onclick="toggleMenu(1)">Menu</button>
+        </div>
+        <ul class="nav" id="main-nav">
+          <li class="close-item">
+            <button class="mobile-btn" onclick="toggleMenu(0)">
+              Close &times;
+            </button>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link">
+              Courses <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dp-menu level-1">
+              <li class="dp-item">
+                <a href="#!" class="dp-link">
+                  Graphic designing<i class="fa fa-caret-right"></i>
+                </a>
+                <ul class="dp-menu level-2">
+                  <li class="dp-item">
+                    <a href="adobeXD.html" class="dp-link">Adobe XD</a>
+                  </li>
+                  <li class="dp-item">
+                    <a href="adobeIllustrator.html" class="dp-link"
+                      >Adobe Illustrator</a
+                    >
+                  </li>
+                  <li class="dp-item">
+                    <a href="adobePhotoshop.html" class="dp-link"
+                      >Adobe Photoshop</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="dp-item">
+                <a href="#!" class="dp-link">
+                  Python <i class="fa fa-caret-right"></i>
+                </a>
+                <ul class="dp-menu level-2">
+                  <li class="dp-item">
+                    <a href="introductiontopython.html" class="dp-link"
+                      >Introduction To Python</a
+                    >
+                  </li>
+                  <li class="dp-item">
+                    <a href="basicpython.html" class="dp-link">Basic Python</a>
+                  </li>
+                  <li class="dp-item">
+                    <a href="intermediatepython.html" class="dp-link"
+                      >Intermediate Python</a
+                    >
+                  </li>
+                  <li class="dp-item">
+                    <a href="Advancepython.html" class="dp-link"
+                      >Advance Python</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Web Development -->
+
+              <li class="dp-item">
+                <a href="#!" class="dp-link">
+                  Web Development<i class="fa fa-caret-right"></i>
+                </a>
+                <ul class="dp-menu level-2">
+                  <li class="dp-item">
+                    <a href="introductiontowebdevelopment.html" class="dp-link"
+                      >Introduction To Web Development</a
+                    >
+                  </li>
+                  <li class="dp-item">
+                    <a href="html5.html" class="dp-link">HTML5</a>
+                  </li>
+                  <li class="dp-item">
+                    <a href="css3.html" class="dp-link">CSS3</a>
+                  </li>
+                  <li class="dp-item">
+                    <a href="javascript.html" class="dp-link">JavaScript</a>
+                  </li>
+                </ul>
+              </li>
+              <!--  -->
+              <!-- <li class="dp-item">
+                  <a href="#!" class="dp-link">Web Development</a>
+                </li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://script.google.com/macros/s/AKfycbzEtbQeQbn3iP9R58zwye8XeayZyhActpo2nmCI4ZH0L-7h_Rg_mKF118AINNv6BVo/exec"
+              class="nav-link"
+              target="_blank"
+              >Assignments</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link" target="_blank"
+              >Contact <i class="fab fa-whatsapp"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container" id="description">
+      <div class="card">
+        <!--  -->
+        <!-- <iframe
+          src="https://zeeshanusmani.com/my-books/"
+          width="560"
+          height="500"
+          frameborder="0"
+        ></iframe> -->
+        <!-- <embed src="/Ultimate Python By Taimoor Nawaz.pdf" type="application/pdf" width="100%" height="500" /> -->
+        <!--  -->
+        <h3>Fully Responsive</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex odit quia
+          sed, voluptas assumenda, quasi ipsum in voluptatibus temporibus
+          recusandae voluptate neque voluptatem esse numquam. Esse vero fugit
+          ipsa voluptate!
+        </p>
+        <h3>Easy Customization</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex odit quia
+          sed, voluptas assumenda, quasi ipsum in voluptatibus temporibus
+          recusandae voluptate neque voluptatem esse numquam. Esse vero fugit
+          ipsa voluptate!
+        </p>
+      </div>
+      <h3>Open Source</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex odit quia
+        sed, voluptas assumenda, quasi ipsum in voluptatibus temporibus
+        recusandae voluptate neque voluptatem esse numquam. Esse vero fugit ipsa
+        voluptate!
+      </p>
+    </div>
+  </body>
+</html>
